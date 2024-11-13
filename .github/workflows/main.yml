@@ -40,5 +40,4 @@ jobs:
           git pull origin deploy
           cd FreqAnalyzerSV
           npm install
-          npm run dev
         EOF
