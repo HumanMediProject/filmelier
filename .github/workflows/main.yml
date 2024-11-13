@@ -34,7 +34,7 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       run: |
-        cat /home/runner/aws_key.pem
+        ls -l /home/runner
         ssh -i /home/runner/aws_key.pem ec2-user@ec2-13-125-62-252.ap-northeast-2.compute.amazonaws.com << 'EOF'
           cd ../../usr/local/workspace/filmelier
           git pull origin deploy
